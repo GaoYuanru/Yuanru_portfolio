@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuanru Gao Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                
+                <li><a href="#portfolio">Works</a></li>
+                <li><a href="#services">Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>GISer / Dancer</p>
+            <h1>Hi, I'm <span>Yuanru Gao (高愿濡) </span><br>From China</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1></br>
+                <p>My name is Yuanru Gao (高愿濡) and I currently live in London, UK. I graduated from the Bartlett Centre for Advanced Spatial Analysis, University College London, with a Master's degree in Urban Spatial Science. I also have a Bachelor of Science degree in Geographic Information Science from Shandong Jianzhu University. I specialise in geospatial analysis, data visualisation, and web design, and have strong programming experience (Python, R, Java). During my undergraduate studies, I published a high-quality Chinese paper and obtained a software patent. During my master's degree, I completed an urban regeneration visualisation project and a remote sensing study diary project. </br></br>Besides, I am also a dancer, specialising in Chinese traditional dance, with more than 10 years of dancing experience. As an art talent, I have participated in many national competitions, and I have also filmed two dance-related microfilms Maps and Brave. </br></br>My interests are in spatial interaction and analysis as well as artistic expression. At this stage, I am committed to combining my academic knowledge with my interests to turn them into products or technologies that can help people have a better experience.</p></br>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills and Interest</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>GIS</span><br>GIS Application/GIS Analysis</li>
+                        <li><span>Human-Computer Interaction</span><br>Front-end Web Interfaces Design/Back-end Development/AR and VR</li>
+                        <li><span>Data Analyst</span><br>Database Management/Data Visualization</li>
+                        <li><span>Dance</span><br>Chinese Traditional Dance/Morden Dance</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Nov. 2022 – Now</span><br>Video host and editor at GISphere Organisation</li>
+                        <li><span>Oct. 2019 - Nov. 2019</span><br>GIS Cartographer intern at Jinan Bureau of Land and Resources</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Sept. 2022 - Sept. 2023</span><br>Msc Urban Spatial Science at University College London</li>
+                        <li><span>Sept. 2018 - Jul. 2022</span><br>Bsc Geographic Information Science at Shandong Jianzhu University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work - Academics</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Visualisation of Urban Regeneration in </br>Great Manchester (Webpage Link)</h3>
+                    <p>Investigated Manchester's history and analyzed house price data over time. Used Mapbox, jQuery, JavaScript, Echarts, Google Map API and CesiumJS 3D to visualize the data, highlighting Manchester's urban regeneration and revitalization efforts. </p>
+                    <a href="https://yuxinnie.github.io/Group5DigitalViz2023.github.io/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>3D GIS services based on</br> Android mobile device (Paper Link)</h3>
+                    <p>A 3D GIS service publishing method based on Android mobile is proposed, and several new service architectures are designed to implement the 3D tile data standard in 3D model service. Through experimental comparisons, this Android-based method shows superior performance and higher publishing efficiency compared to the Nginx-based static service middleware, which can better meet the current needs of complex 3D application environments. In this project, I was mainly responsible for data collection and cleaning, documentation and format calibration.</p>
+                    <a href="https://oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2022&filename=CHWZ202203022&uniplatform=OVERSEA&v=VyULKqgZ7_WPvZRZZxSlH4-S9KpDidiPDiSpAeCLdqC46FJhQy908qLqKfTbbbmU" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Remotely Sensing Learning Diary </br>(Webpage Link)</h3>
+                    <p>An introductory learning diary on remote sensing, created using GitHub Pages, Quarto and RS tools like Google Earth Engine, SNAP and ENVI.</p>
+                    <a href="https://gaoyuanru.github.io/RS/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-7.png">
+                <div class="layer">
+                    <h3>Network path-based indoor location sensing and spatial relationship analysis </br>(Vedio Display)</h3>
+                    <p>The project mainly used GIS technology, GIS software SuperMap, Dijkstra's algorithm and genetic algorithm to create indoor maps and path analyses for the Beidong building of Shandong Jianzhu University, in order to study and demonstrate the best indoor navigation paths.</p>
+                    <a href="images/network.mp4" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-8.png">
+                <div class="layer">
+                    <h3>Internet + GIS research on Jinan Wisdom Spring System for Tourism </br>(Software Patent Certificate)</h3>
+                    <p>The project adopts technologies such as Python, JavaScript and Echarts to realise a comprehensive real-time information integration system for scenery areas. The system can collect, process and display all kinds of data about the scenery in real-time, including the water level of the spring, air temperature in the garden, number of tourists, and so on, to help tourists intelligently obtain real-time status and data changes of the scenery, and at the same time, it is also convenient for managers to carry out the overall coordination and management. In addition, the system also provides interactive discussion forums and ‘likes’ functions, so that tourists can share their experiences and provide feedback, which enhances the tourists' experience and the management efficiency of the scenic spot.</p>
+                    <a href="images/certificate.pdf"  target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-9.png">
+                <div class="layer">
+                    <h3>Spatial and temporal patterns of new urbanisation and coupled urban-rural integration and coordinated development in Shandong Province (Bachelor's Dissertation)</h3>
+                    <p>The development dynamics of new urbanisation and urban-rural integration in Shandong Province are explored, highlighting changes and patterns in different temporal and spatial dimensions. Through the expert scoring method and principal component analysis, the study depicts the development and evolution of these two dimensions in the cities of Shandong Province between 2000 and 2020. It was found that cities in Shandong Province showed significant spatial and temporal variability in the development levels of new urbanisation and urban-rural integration, with a spatial pattern of "high in the north-eastern Jiaodong and the central part of the province, and low in the south-eastern and western parts of the province".</p>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/GaoYuanru" class="btn" target="_blank">See more on GitHub</a>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work - Art</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>Maps - one lens to the end</h3>
+
+                    <a href="https://www.bilibili.com/video/BV1a4411H7Jb/?spm_id_from=333.337.search-card.all.click&vd_source=7338b5ebd6a41ca683b6313f6a897ae0" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-5.png">
+                <div class="layer">
+                    <h3>Brave</h3>
+
+                    <a href="https://www.xinpianchang.com/a11025892?xpcApp=xpc&channel=link&type=URL&from=share" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/IMG_2470.GIF">
+                <div class="layer">
+                    <h3>To be continued...</h3>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Profile</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h3>Honor</h3></br>
+              
+                    <ul>
+                        <li><span>Nov. 2020</span><br>Winning Award in the R&D Group of the 18th SuperMap Cup MapGISContest</li>
+                        <li><span>Dec. 2020</span><br>orporate Scholarship by Tongfa Group</li>
+                        <li><span>May. 2022</span><br>Outstanding graduates of universities in Shandong Province</li>
+                    </ul>
+                
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h3>Media Coverage (News Link)</h3></br>
+                <ul>
+                    <li><a href="http://www.tailian.org.cn/qgtl/201907/t20190722_12186073.htm" target="_blank">台胞青年要成为两岸和平统一大业的中流砥柱</a></li>
+                    <li><a href="http://www.tailian.org.cn/qgtl/202207/t20220727_12455884.htm" target="_blank">全国台联2022年两岸婚生子女夏令营在宁夏银川开营</a></li>
+        
+                </ul>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h3>Skills</h3></br>
+                <ul>
+                    <li><span>Language:</span> Mandarin (Native, PSC First-class), English (IELTS Band 7 C1 Level, Languagecert High pass).</li>
+                    <li><span>Techniques: </span> Python, R, MATLAB, Data Analysis and Visualization, Remote Sensing: Proficient in the use of ENVI, GIS Application/Analysis </br>(GIS Application Level 1 Certificate): Proficient in the use of ArcGIS, QGIS, Front-end Web Design.</li>
+        
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> yuanru.gao.22@ucl.ac.uk</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/YuanruG" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/gyr0617/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yuanru-gao-687b31254/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Yuanru Gao 2023</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
